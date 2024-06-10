@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+	
+
+  <Commands package="AutoCodeGenerationVSIX">
+    <Groups>
+      <Group guid="AutoCodeGenerationVSIX" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="VSMainMenu" id="ItemNode"/>
+      </Group>
+    </Groups>
+
+    <!--This section defines the elements the user can interact with, like a menu command or a button
+        or combo box in a toolbar. -->
+    <Buttons>
+      <Button guid="AutoCodeGenerationVSIX" id="MyCommand" priority="0x0100" type="Button">
+        <Parent guid="AutoCodeGenerationVSIX" id="MyMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="Matrix" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Auto Code Generation</ButtonText>
+          <LocCanonicalName>.AutoCodeGenerationVSIX.MyCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="AutoCodeGenerationVSIX" value="{121282ab-2846-46b9-b0c7-fa7092a30e3f}">
+      <IDSymbol name="MyMenuGroup" value="0x0001" />
+      <IDSymbol name="MyCommand" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

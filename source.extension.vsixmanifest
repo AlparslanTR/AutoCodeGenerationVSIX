@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="AutoCodeGenerationVSIX.c00b7b96-9eb7-4ed2-a8d2-4c9d9f67e018" Version="1.0" Language="en-US" Publisher="legolasgfb431907@outlook.com" />
+        <DisplayName>AutoCodeGeneration</DisplayName>
+        <Description xml:space="preserve">This extension provides auto code generation for simple architecture in .NET 8 projects, including DTOs, context updates, abstract classes, Entity Framework, and interfaces implementations.</Description>
+        <GettingStartedGuide>In order to use this extension, you first need to have a class library named EntityLayer. Then, you can use this extension by selecting your classes within the models folder in your entity layer.</GettingStartedGuide>
+        <ReleaseNotes>Initial release of AutoCodeGenerationVSIX. Provides automated code generation for DTOs, context updates, abstract classes, Entity Framework and interfaces implementations.</ReleaseNotes>
+        <Icon>Resources\Icon.png</Icon>
+        <PreviewImage>Resources\Icon.png</PreviewImage>
+        <Tags>code generation, .NET, simple architecture, .Net Core</Tags>
+        <Preview>true</Preview>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+        <Asset Type="Microsoft.VisualStudio.MSBuildFile" d:Source="File" Path="AutoCodeGenerationVSIX.targets" />
+
+    </Assets>
+</PackageManifest>
