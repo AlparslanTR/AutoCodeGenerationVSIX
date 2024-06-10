@@ -5,7 +5,8 @@
 Katmanlı mimarileriniz de sürekli her katmana girip kod yazmaktan sıkıldıysanız bu paket tam size göre. Dotnet 8 versiyonunda inşa edildi. Kullanacağınız zaman boş solition içerisinde bir adet EntityLayer adında class library kurmanız gerekmekte. Ardından Models klasörüne oluşturacağınız sınıfı etkinleştirip sağ tık yaptığınız da Auto Code Generator butonuna basmanız yeterlidir. Diğer katmanlar kendiliğinden otomatik oluşup bütün class ve interfaceler otomatik olarak oluşturulacaktır. Zamanla vaktim olduğu müddetçe eklemeler ve güncellemeler yapmaya devam edeceğim. Sizde önerilerinizi veya eklenmesi iyi olur dediğiniz herhangi bir durumu bana iletebilirsiniz. 
 
 Bu proje herkese açıktır. Dilediğiniz gibi indirip kendinize veya ihtiyaçlarınıza göre özelleştirip kendi custom projeleriniz de kullanabilirsiniz.
-Market Linki (Visual Studio Uzantılar Bölümünden İndirmeniz Tavsiye Edilir): https://marketplace.visualstudio.com/items?itemName=byluestht.AutoCodeGeneration
+Market Linki (Visual Studio Uzantılar Bölümünden İndirmeniz Tavsiye Edilir) 
+https://marketplace.visualstudio.com/items?itemName=byluestht.AutoCodeGeneration
 Eklentimizde mevcut olan bilgiler altta yer almaktadır:
 
 - EntityLayer
